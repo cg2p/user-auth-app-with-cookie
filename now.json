@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "user-auth-app-with-cookie",
+  "build": {
+    "env": {
+      "API_URL": "http://localhost:3000"
+    }
+  },
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
